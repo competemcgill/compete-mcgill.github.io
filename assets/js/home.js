@@ -20,12 +20,12 @@ function _blink(id) {
         (function loop(i) {
             if (i < 100000000) {
                 if ($(id).text().slice(-1) === '_') {
-                    $(id).text( $(id).text().slice(0, -1));
+                    $(id).text($(id).text().slice(0, -1));
                 }
                 else {
-                    $(id).text( $(id).text() + '_' );
+                    $(id).text($(id).text() + '_');
                 }
-                window.setTimeout( function () { loop(++i); }, delay );
+                window.setTimeout(function () { loop(++i); }, delay);
             }
             else {
                 return;
@@ -36,5 +36,10 @@ function _blink(id) {
 }
 
 $(function () {
-    _type_out('> coming soon_', '#coming_soon').then(function(){return _blink('#coming_soon')});
+    $('#left_x5F_brack_1_').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+        function (e) {
+            _type_out('> coming soon_', '#coming_soon').then(function () { return _blink('#coming_soon') });
+        }
+    );
+
 });
