@@ -11,9 +11,24 @@
     font-family: Consolas;
 }
 
+#signup_links, #signup_links a {
+    text-decoration: none;
+    font-size:18px;
+    color: black;
+}
+
+#signup_links a:hover{
+    color: red;
+}
+
 #coming_soon{
     text-align: center;
     margin-left: 18px;
+}
+
+#signup_links {
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 @keyframes cursive{
