@@ -41,7 +41,7 @@ $(function () {
             _type_out('   signup now...', '#signup_now')
                 .then(function() { return _type_out('> competitions', '#competitions')})
                 .then(function() { return _type_out('> media & web', '#media')})
-                .then(function() { return _type_out('> advertising', '#advertising')})
+                .then(function() { return _type_out('> sponsorship', '#advertising')})
                 .then(function() { return _type_out('> events', '#events')})
                 .then(function () { return _blink('#events') });
         }
