@@ -1,6 +1,6 @@
 function _type_out(message, id) {
     return new Promise((resolve) => {
-        let delay = 100;
+        let delay = 200;
         (function loop(i) {
             if (i < message.length) {
                 $(id).text($(id).text() + message[i]);
@@ -38,12 +38,7 @@ function _blink(id) {
 $(function () {
     $('#left_x5F_brack_1_').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
         function (e) {
-            _type_out('   signup now...', '#signup_now')
-                .then(function() { return _type_out('> competitions', '#competitions')})
-                .then(function() { return _type_out('> media & web', '#media')})
-                .then(function() { return _type_out('> sponsorship', '#advertising')})
-                .then(function() { return _type_out('> events', '#events')})
-                .then(function () { return _blink('#events') });
+            _type_out('> coming soon_', '#coming_soon').then(function () { return _blink('#coming_soon') });
         }
     );
 
