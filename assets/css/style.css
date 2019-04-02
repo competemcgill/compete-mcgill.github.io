@@ -8,7 +8,7 @@
     -o-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     font-size: 30px;
-    font-family: Consolas;
+    font-family: 'Source Code Pro', monospace;
 }
 
 #coming_soon{
